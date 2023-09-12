@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 flexbox layout</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            background-color: red;
+            color: white;
+            height: 100px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+
+        }
+        section{
+            display: flex;
+
+        }
+        nav{
+            background-color: palegreen;
+            flex: 5;
+        }
+        article{
+            background-color: rgb(53, 70, 53);
+            flex: 10;
+        }
+        article{
+            background-color: rgb(53, 68, 70);
+            flex: 10;
+        }
+        footer{
+            background-color: black;
+                color: white;
+                height: 100px;
+                padding-top: 10px;
+                text-align: center;
+            
+        }
+        @media(max-width:800px){
+            section{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>cities</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="london"></a></li>
+            <li><a href="paries"></a></li>
+            <li><a href="toyoto"></a></li>
+
+        </ul>
+    </nav>
+    <article>
+        <h1>london</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ipsum quod accusamus repudiandae aliquid
+            blanditiis quidem, corporis consectetur at beatae inventore illum, numquam nam iste eius, unde explicabo ex
+            natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ipsum quod accusamus repudiandae aliquid
+                blanditiis quidem, corporis consectetur at beatae inventore illum, numquam nam iste eius, unde explicabo ex
+                natus.</p>
+    </article>
+
+    <div>
+        <h1>paries</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ipsum quod accusamus repudiandae aliquid
+            blanditiis quidem, corporis consectetur at beatae inventore illum, numquam nam iste eius, unde explicabo ex
+            natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ipsum quod accusamus repudiandae aliquid
+                blanditiis quidem, corporis consectetur at beatae inventore illum, numquam nam iste eius, unde explicabo ex
+                natus.</p>
+            </div>
+            <footer>
+                <h3>footer</h3>
+            </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float layout 1</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        header{
+            background-color: gray;
+            color: white;
+            height: 100px;
+            padding-top: 10px;
+            text-align: center;
+
+        }
+        nav{
+            background-color: springgreen;
+            height: 300px;
+            width: 30%;
+            float: left;
+        }
+        ul{
+            list-style-type: none;
+
+        }
+        article{
+            background-color: slategrey;
+            height: 300px;
+            width: 40%;
+            float: left;
+        }
+        div{
+            background-color: rgb(112, 144, 120);
+            height: 300px;
+            width: 30%;
+            float: left;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            height: 100px;
+            padding-top: 10px;
+            text-align: center;
+            clear: both;
+        }
+        @media (max-width:800px){
+            nav,article,div{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>cities</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="london"></a></li>
+            <li><a href="paries"></a></li>
+            <li><a href="toyoto"></a></li>
+
+        </ul>
+    </nav>
+    <article>
+        <h1>london</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ipsum quod accusamus repudiandae aliquid
+            blanditiis quidem, corporis consectetur at beatae inventore illum, numquam nam iste eius, unde explicabo ex
+            natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ipsum quod accusamus repudiandae aliquid
+                blanditiis quidem, corporis consectetur at beatae inventore illum, numquam nam iste eius, unde explicabo ex
+                natus.</p>
+    </article>
+
+    <div>
+        <h1>paries</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ipsum quod accusamus repudiandae aliquid
+            blanditiis quidem, corporis consectetur at beatae inventore illum, numquam nam iste eius, unde explicabo ex
+            natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ipsum quod accusamus repudiandae aliquid
+                blanditiis quidem, corporis consectetur at beatae inventore illum, numquam nam iste eius, unde explicabo ex
+                natus.</p>
+            </div>
+            <footer>
+                <h3>footer</h3>
+            </footer>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout element</title>
+    <style>
+        *{
+            margin: 0;
+        }header{
+            background-color: seagreen;
+            height: 60px;
+            padding-top: 10px;
+
+        }
+        nav{
+            background-color: pink;
+            height: 60px;
+            padding-top: 10px;
+            position: sticky;
+            top:0;
+        }
+        ul{
+            list-style-type: none;
+            text-align: center;
+
+        }
+        li{
+            display: inline;
+            padding: 14px 16px;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+        section{
+            background-color: slateblue;
+            height: 500px;
+            padding-top: 65px;
+        }
+        article{
+            background-color: skyblue;
+            height: 500px;
+            padding-top: 65px;
+        }
+        aside{
+            background-color: sienna;
+            height: 500px;
+            padding-top: 65px;
+        }
+        div{
+            background-color: darkgreen;
+            height: 65px;
+            padding-top: 65px;
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+            height: 80px;
+            padding: top 10px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">header element -website name</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutus">About us</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#gallery ">gallery</a></li>
+            <li><a href="#contact">contact us</a></li>
+
+        </ul>
+    </nav>
+    <section id="aboutus">
+        <h1 style="text-align: center;">section layout element-about us </h1>
+
+    </section>
+    <article id="services">
+        <h1 style="text-align: center;">article layout element-services </h1>
+
+    </article>
+    <aside id="gallery">
+        <h1 style="text-align: center;">aside layout element-gallery </h1>
+
+    </aside>
+    <div id="contact">
+        <h1 style="text-align: center;">div layout element-contact us</h1>
+
+    </div>
+    <footer id="aboutus">
+        <h1 style="text-align: center;">footer layout element </h1>
+
+    </footer>
+</body>
+</html>
